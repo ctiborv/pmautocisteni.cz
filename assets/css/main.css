@@ -68,6 +68,10 @@
 }
 
 
+.logo { 
+    height: 80px;
+}
+
 .popisek {
   position:absolute;
   width:110px;
@@ -1514,9 +1518,6 @@
 		font-size: 1.6em;
 		letter-spacing: -1px;
 		margin-bottom: 1em;
-                                                text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
                 
 	}
 
@@ -1528,10 +1529,14 @@
 	h3 {
 		font-size: 1.2em;
 		margin-bottom: 0.8em;
+                
 	}
 
 	h4 {
 		font-size: 1em;
+text-shadow: 0px 1px 1px rgba(0,0,0,0.4),
+             0px 2px 2px rgba(0,0,0,0.1),
+             0px 3px 3px rgba(0,0,0,0.1);                
 	}
 
 	p, ul {
@@ -1814,13 +1819,13 @@
 
 			#main {
 				background: #F2F9F0;
-				padding: 1em 0;
+				padding: 2em 0;
 			}
 
 		/* Footer */
 
 			#footer-wrapper {
-				padding: 1em 0 0 0;
+				padding: 2em 0 0 0;
 			}
 
 		/* Copyright */
@@ -1923,7 +1928,11 @@
                             height: 220px;
                         }
                         
+                .logo { 
+                    height: 70px;
+                }
 
+                        
 		/* Basic */
 
 			body {
