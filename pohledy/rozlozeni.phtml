@@ -33,7 +33,7 @@
 						<div class="12u">
 
 							<header id="header">
-								<h1><a href="#" id="logo"><img height="83" src="img/logo.png"</a></h1>
+								<h1><a href="clanek/uvod" id="logo"><img height="83" src="img/logo.png"</a></h1>
 								<nav id="nav">
                                                                     <?php foreach ($menus as $menu) {?>
                                                                     <a href="<?= $menu['url'] ?>" <?php if ($menu['aktivni']) echo "class=\"current-page-item\"";  ?> ><?= $menu["nazev"] ?></a>
@@ -59,9 +59,8 @@
 				<div class="container">
 					<div class="row">
                             <?= $this->neodata['footer']?>
-					</div>
-					<div class="row">
-						<div class="12u">
+                                        </div>
+                                    <div>
 							<div id="copyright">
 								<?= $this->neodata['copyright'] ?>
 							</div>

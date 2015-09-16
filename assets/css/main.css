@@ -1500,7 +1500,7 @@
 		font-family: sans-serif;
 		background-color: #e3e9dc;
 		font-family: 'Ubuntu Condensed', sans-serif;
-		color: #878e83;
+		color: #555555;
 		letter-spacing: -1px;
 	}
 
@@ -1511,10 +1511,13 @@
 
 
 	h2 {
-		text-transform: lowercase;
 		font-size: 1.6em;
 		letter-spacing: -1px;
 		margin-bottom: 1em;
+                                                text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+                
 	}
 
 	h3, h4 {
@@ -1723,7 +1726,7 @@
                                 box-shadow: 0px 4px 3px rgba(0,0,0,0.4),
              0px 8px 13px rgba(0,0,0,0.1),
              0px 18px 23px rgba(0,0,0,0.1);
-				background-color: #fff;
+				background-color: #F2F9F0;
 				height: 86px;
 			}
 
@@ -1810,14 +1813,14 @@
 		/* Main */
 
 			#main {
-				background: #fff;
+				background: #F2F9F0;
 				padding: 1em 0;
 			}
 
 		/* Footer */
 
 			#footer-wrapper {
-				padding: 4em 0;
+				padding: 1em 0 0 0;
 			}
 
 		/* Copyright */
@@ -1826,7 +1829,7 @@
 				text-align: center;
 				color: #A6A88F;
 				border-top: solid 1px #ced0b7;
-				padding: 3em 0 0 0;
+				padding: 1em 0 0 0;
 				margin: 1% 0 0 0;
 			}
 
