@@ -1,0 +1,21 @@
+<section>
+    <header>
+        <h2>Seznam článků</h2>
+    </header>
+    
+    
+   <table class="default">
+       
+<?php foreach ($clanky as $clanek) : ?>
+       <tr><td><a href="adminclanek/<?= $clanek['url'] ?>"><?= $clanek['titulek'] ?></td><td><a href="adminclanek/vymaz/<?= $clanek['clanky_id'] ?>" title="Vymazat">X</a></tr>
+<?php endforeach ?>
+   </table>
+    <footer>
+        <p>
+        <h3><a href="adminclanek/novy">Přidat nový článek</h3>
+        </p>
+    </footer>
+
+</section>
+ 
+    

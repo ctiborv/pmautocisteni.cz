@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+	<head>
+		<base href="/localhost" />
+		<meta charset="UTF-8" />
+		<title><?= $titulek ?></title>
+		<meta name="description" content="<?= $popis ?>" />
+		<meta name="keywords" content="<?= $klicova_slova ?>" />
+                <meta name="robots" content="index, follow" /> 
+                <meta name="author" content="www.ctiborvenus.eu" /> 
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+                <?= $googlest ?>
+        	<script src="assets/js/jquery.min.js"></script>
+		<link rel="stylesheet" href="assets/css/main.css" />
+                <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.css?v=2.1.5" media="screen" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+                        <?php if ($_SESSION['admin']==1) { ?>
+                        <script type="text/javascript" src="assets/js/tinymce/tinymce.min.js"></script>
+                        <script type="text/javascript" src="assets/js/tinymce/tinymcestart.js">
+
+                     </script>
+                        <?php } ?>
+        </head>
+
+	<body>
+            
+		<div id="page-wrapper">
+			<div id="header-wrapper">
+				<div class="container">
+	<?php if ($_SESSION['admin']==1) echo "Administrátorský režim aktivní."; ?>
+                                    <div class="row">
+						<div class="12u">
+
+							<header id="header">
+								<h1><a href="#" id="logo"><img height="83" src="img/logo.png"</a></h1>
+								<nav id="nav">
+                                                                    <?php foreach ($menus as $menu) {?>
+                                                                    <a href="<?= $menu['url'] ?>" <?php if ($menu['aktivni']) echo "class=\"current-page-item\"";  ?> ><?= $menu["nazev"] ?></a>
+                                                                    <?php }?>
+								</nav>
+							</header>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		<nav>
+		</nav>
+        		<div id="main">
+				<div class="container">
+					<div class="row main-row">
+			<?php $this->kontroler->vypisPohled(); // vložení aktuálního pohledu do šablony ?>
+				</div>
+                                </div>
+                        </div>
+			<div id="footer-wrapper">
+				<div class="container">
+					<div class="row">
+                            <?= $this->neodata['footer']?>
+					</div>
+					<div class="row">
+						<div class="12u">
+							<div id="copyright">
+								<?= $this->neodata['copyright'] ?>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+                        <script type="text/javascript" src="assets/js/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+                        <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+                        <script type="text/javascript" src="assets/js/fancybox_start.js"></script>
+                        <script type="text/javascript" src="assets/js/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+
+
+
+	</body>
+</html>

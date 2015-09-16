@@ -1,0 +1,532 @@
+/*----------------------------------------------------------
+The base color for this template is #5c87b2. If you'd like
+to use a different color start by replacing all instances of
+#5c87b2 with your new color.
+----------------------------------------------------------*/
+body {
+    background-color: #3c6732;
+    font-size: .85em;
+    font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+    margin: 0px 0 0 0 ;
+    padding: 0;
+    color: #696969;
+}
+
+a:link {
+    color: #034af3;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #505abc;
+}
+
+a:hover {
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active {
+    color: #12eb87;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.6em;
+}
+
+header,
+footer,
+nav,
+section {
+    display: block;
+}
+
+/* HEADINGS   
+----------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    color: #000;
+}
+
+h1 {
+    font-size: 1.3em;
+    padding-bottom: 0px;
+}
+
+h2 {
+    font-size: 1.1em;
+    padding: 0 0 0px 0;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+h5, h6 {
+    font-size: 1em;
+}
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+/* you can specify a greater or lesser percentage for the 
+page width. Or, you can specify an exact pixel width. */
+.page {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nove {
+  font-weight: bold;
+}
+
+header, #header {
+    position: relative;
+    color: #000;
+}
+
+header h1, #header h1 {
+    font-weight: bold;
+    padding: 5px 0;
+    margin: 0;
+    color: #fff;
+    border: none;
+    line-height: 2em;
+    font-size: 32px !important;
+    text-shadow: 1px 1px 2px #111;
+}
+
+.left1 {
+  padding: 5px 5px 5px 5px;
+  background-color: #c8eef4;
+  border-radius: 4px 0px 0px 4px;
+  margin-bottom: 2px;
+}
+
+#aktivnilist {
+    background-color: #eee;
+
+    color: rgb(139,0,0);
+}
+
+.nadpis {
+  width: 100%;
+  letter-spacing: 3px;
+  font-variant: small-caps;
+  text-align: left;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+
+  
+}
+
+
+.zprava {
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  
+  
+}
+.datumzpravy {
+  margin-left: 1px;
+
+}
+.text {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 5px 10px 5px 10px;
+  color: black;
+}
+.vlevo {
+  margin-left: -20px;
+}
+#obrazek {
+
+  margin-right: 5px;
+  display: inline;
+  position: relative;
+  top: 15px;
+  padding: 0px;
+  font-size: 15px;
+  color: #aaa;
+  border: 0;
+}
+
+#prilohy {
+  margin-left: 145px;
+  
+}
+
+
+#prilohytd {
+  border-bottom: thin white solid;
+  
+}
+
+
+#admin {
+
+    left: 70px;
+    font-weight: bold;
+    padding: 5px 0;
+    margin: 0;
+    color: #fff;
+    border: none;
+    line-height: 2em;
+    font-size: 32px !important;
+    text-shadow: 1px 1px 2px #111;
+  
+}
+
+#hledat {
+  position: absolute;
+  left: 300px;
+  top: 25px;
+  color: white;
+}
+
+#hledatn{
+  margin-left: 10px;
+}
+
+#btn {
+  font-size: 14px;
+  
+
+}
+
+#sezmenu {
+  float: left;
+  margin-right: 20px;
+  width: 150px;
+  
+}
+
+#zprmenu {
+  float: left;
+  margin-right: 20px;
+  width: 200px;
+}
+
+#left ul {
+  margin-top: 7px;
+  margin-bottom: 1px;
+}
+
+#left li {
+  margin-left: 5px;
+}
+
+
+#right ul {
+  margin-left: -15px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+#left {
+	float:left;
+	width:200px;
+	margin-right:15px; padding:0;
+	margin-left: -15px;
+	margin-top: -1px;
+	font-size:90%;
+	
+	border-right-width: 1px;
+	border-right-style: dotted;
+	border-right-color: black;
+  background-color: #5c87b2;
+
+	
+	}
+#right {
+	float:right;
+	width:200px;
+	margin:0; padding:0;
+	font-size:90%;
+	}
+#middle {
+	margin-left: 220px;
+	font-size:100%;
+	display: block;
+	}
+	
+
+
+#sezobsah {
+  margin-left: 20px;
+  
+  
+}
+
+.domu {     
+ display: inline;
+ position: relative;
+ top: 10px; 
+}
+
+#menu {
+  float: none;
+  display: inline;;
+
+}
+#main {
+    padding: 0px 15px 15px 15px;
+    background-color: #eee;
+    border-radius: 0 0 0 0;
+}
+
+#mainn {
+    padding: 0px 0px 0px 0px;
+    background-color: #eee;
+    border-radius: 0 0 0 0;
+}
+
+
+
+#lmenu 
+{
+     border-radius: 0px 0px 4px 4px;
+     text-align: center;
+     padding: 10px 0px 0px 0px;
+}
+
+#all 
+{
+     border-radius: 0px 0px 4px 4px;
+     padding: 1px 0px 0px 0px;
+}
+
+
+#lmenu ul li
+{
+    display: inline;
+    
+    margin-right: 15px;
+    margin-top: 0px
+    margin-bottom: 0px;
+    padding: 0px 0px 0px 0px;
+    text-align:left;   
+    
+  ;
+   
+}
+
+#lmenu a
+{
+  text-decoration: none;
+  font-weight: bold;
+   
+}
+
+
+#obsah 
+{
+
+  width: 98%;
+  background-color: #fff;
+  padding:10px 0px 20px 20px;
+}
+
+.clear {clear: both;}
+
+
+
+footer, 
+#footer {
+    background-color: #fff;
+    color: #999;
+    padding: 10px 0;
+    text-align: center;
+    line-height: normal;
+    margin: 0 0 30px 0;
+    font-size: .9em;
+    border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+}
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+#aktivni {
+    color: rgb(139,0,0);
+}
+
+.left1 ul {
+  margin-left: -10px;
+}
+
+#lmenu li a#aktivni {
+    background-color: #eee;
+
+    color: rgb(139,0,0);
+}
+
+#menu li a#aktivni {
+    background-color: #eee;
+
+    color: rgb(139,0,0);
+}
+
+#menu ul{
+    padding: 0 0 0 0px;
+    position: relative;
+    margin: 0;
+    text-align: justify;
+}
+
+#menu li {
+    display: inline;
+    list-style: none;
+}
+
+#menu li#greeting {
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2.8em;
+    color: #fff;
+}
+
+#menu li a {
+    padding: 10px 10px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2.8em;
+    background-color: #c8eef4;
+    color: #034af3;
+    border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+}
+
+#menu li a:hover {
+    background-color: #fff;
+    text-decoration: none;
+}
+
+#menu li a:active {
+    background-color: #a6e2a6;
+    text-decoration: none;
+}
+
+#menu li.selected a {
+    background-color: #fff;
+    color: #000;
+}
+
+/* FORM LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+input[type="text"], 
+input[type="password"] {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.2em;
+    color: #444;
+}
+
+.dkm {
+    margin-left: 15px;
+}
+
+select {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.2em;
+    color: #444;
+}
+
+input[type="submit"] {
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+/* TABLE
+----------------------------------------------------------*/
+
+table {
+    border: solid 1px #333;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 5px;
+    border: solid 1px #333;
+}
+
+table th {
+    padding: 6px 5px;
+    text-align: left;
+    font-weight: bold;
+    background-color: #ccc;
+    border: solid 1px #333;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+.clear {
+    clear: both;
+}
+
+.error {
+    color: Red;
+}
+
+nav, 
+#menucontainer {
+    margin-top: 0px;
+}
+
+div#title {
+    display: block;
+    float: left;
+    text-align: left;
+}
+
+#logindisplay {
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    margin: 10px;
+    color: White;
+}
+
+#logindisplay a:link {
+    color: white;
+    text-decoration: underline;
+}
+
+#logindisplay a:visited {
+    color: white;
+    text-decoration: underline;
+}
+
+#logindisplay a:hover {
+    color: white;
+    text-decoration: none;
+}
+

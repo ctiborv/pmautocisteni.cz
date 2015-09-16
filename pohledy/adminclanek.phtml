@@ -1,0 +1,16 @@
+<header>
+	<h1>Editace článku </h1>
+</header>
+<section>
+    <form action="" method="post">
+    <table class="default">
+        <tr><td>Titulek :</td><td><input type="text" name="titulek" size="35" value="<?= $titulek ?>" ></td></tr>
+        <tr><td>Klíčová slova :</td><td><input type="text" name="klicova_slova" size="35" value="<?= $klicova_slova ?>" ></td></tr>
+        <tr><td>Popis webu :</td><td><input type="text" name="popisek" size="35" value="<?= $popisek ?>" ></td></tr>
+        <tr><td>Slider :</td><td><input type="checkbox" name="slider" <?php if ($slider) echo "checked"; ?>></td></tr>
+        <tr><td>Text :</td><td><textarea id="e1m1" name="obsah" rows="15"> <?= $_obsah ?></textarea></td></tr>
+        <tr><td colspan="2" align="right"><input style="text-align: right;" type="submit" name="Ulozit" value="Uložit"</td></tr>
+    </table>
+    </form>
+                
+</section>

@@ -1,0 +1,14 @@
+<section>
+    <header>
+        <h2>Seznam článků</h2>
+    </header>
+
+    
+<?php foreach ($clanky as $clanek) : ?>
+    <p>
+        <h3><a href="clanek/<?= $clanek['url'] ?>"><?= $clanek['titulek'] ?></a></h3>
+        <p><?= $clanek['popisek'] ?></p>
+    </p>    
+<?php endforeach ?>
+
+</section>

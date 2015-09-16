@@ -1,0 +1,16 @@
+
+
+<h1>Galerie webu</h1>
+
+<?php foreach ($galerie as $galeriej) { ?>
+<section>
+    <h2><?= $galeriej['nazev']?></h2>
+    <figure>
+    <?php foreach ($galeriej['fotky'] as $foto) { ?>
+        
+        <a class="fancybox" data-fancybox-group="gallery<?= $foto['id_galerie'] ?>" href="admgalerie/<?= $foto['soubor']?>" title="<?= $foto['popis'] ?>"><img src="admgalerie/<?= $foto['soubormale'] ?>" alt="<?= $foto['popis'] ?>" height="100"></a>
+    
+    <?php } ?>
+    </figure>
+</section>
+<?php } ?>

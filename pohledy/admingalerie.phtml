@@ -1,0 +1,15 @@
+<h1>Administrace galerie webu</h1>
+<section>
+<table>
+<?php foreach ($galerie as $galeriej) { ?>
+    <tr><td><input value="<?= $galeriej['nazev']?>" name="nazev"></td></tr>
+    <tr><td>Fota: </td><td>
+    <?php foreach ($galeriej['fotky'] as $foto) { ?>
+            <div style="float:left;"><a href="<?= $foto['soubor']?>"><img src="<?= $foto['soubormale'] ?>" alt="<?= $foto['popis'] ?>" height="96"></a><br></div>
+    <?php } ?>
+        </td></tr>
+    <?php } ?>
+</table>  
+</section>    
+       
+
