@@ -71,7 +71,7 @@ class SmerovacKontroler extends Kontroler
 
                 $menuKontroler =  new MenuKontroler();
                 
-                $this->data['menus']= $menuKontroler->zpracujMenu($parametry[0]) ;
+                $this->data['menus']= $menuKontroler->zpracujMenu($parametry) ;
 
                 // Nastavení hlavní šablony
 		$this->pohled = 'rozlozeni';

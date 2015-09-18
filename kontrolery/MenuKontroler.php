@@ -25,9 +25,11 @@ class MenuKontroler  {
        public function zpracujMenu($parametry) {       
            
            $menudata=$this->_menudata;
+           $akturl =  ltrim($parametry[0],'/');
             foreach ($menudata as $menu) {
-                if ($parametry[0]==$menu['url']) $aktivni=1;
+                if ($akturl==$menu['url']) $aktivni=1;
                 else $aktivni=0;
+                
                 $menuview[]=array('url'=>$menu['url'],'nazev'=>$menu['nazev'],'aktivni'=>$aktivni);
             }
             return $menuview;
