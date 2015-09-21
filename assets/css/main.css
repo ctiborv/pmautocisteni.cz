@@ -57,15 +57,58 @@
 
 /*slider */
 
-#sliderb_container
+#slider1_container
 {
-  position: relative; 
-  top: 0px; 
-  left: 0px; 
-  width: 600px;
-  height: 265px;
-  overflow: hidden;
+    			border-radius: 5px;
+//				border: solid 1px lightgreen;
+//				box-shadow: 0px 0px 0px 1px #12a0bf, 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+                                box-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+             position: relative;
+             top: 0px;
+             left: 0px;
+             width: 600px;
+             height: 300px;
+             overflow: hidden;                                
 }
+
+
+/*galerie*/
+
+.galerie {width:700px;margin-top:15px}	
+.galerka {	margin: 0;
+	padding: 7px 0;}	
+.galerka h3 {font-size:20px; text-transform:uppercase; margin-bottom:10px;padding:0; position:relative;  }
+.galerka img {
+	border: 0px solid #FFF;
+	-webkit-box-shadow: 0px 3px 13px 0px rgba(89,88,89,0.43);
+	-moz-box-shadow: 0px 3px 13px 0px rgba(89,88,89,0.43);
+	box-shadow: 0px 3px 13px 0px rgba(89,88,89,0.43);
+  padding: 2px;
+	margin: 2px 5px 5px 0;
+	vertical-align: top;
+}
+
+.galobr {
+  margin: 5px; 
+  display: block;
+  width 60px;
+}
+
+
+.galpopis {
+  display: block;
+  width: 60px;
+  
+}
+.galerka p {
+	
+	text-align:justify;
+	font-size: 14px;
+	
+}
+
 
 
 .logo { 

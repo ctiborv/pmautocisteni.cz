@@ -34,7 +34,7 @@ class Menu {
                 $menuklient[]=array('url'=>'clanek/'.$clanek['url'],'nazev'=>$clanek['titulek']);
                 
             }
-            $menuklient[]=array('url'=>'/galerie','nazev'=>'Naše práce');
+            $menuklient[]=array('url'=>'/nase-prace','nazev'=>'Naše práce');
 //            $menuklient[]=array('url'=>'/login','nazev'=>'Přihlásit');
             return $menuklient;
     }

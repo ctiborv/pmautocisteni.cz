@@ -1,0 +1,102 @@
+
+@font-face {	
+	  font-family: 'GaletteRegular';
+    src: url('../fonts/galette-med-v3.eot');
+    src: url('../fonts/galette-med-v3.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/galette-med-v3.woff') format('woff'),
+         url('../fonts/galette-med-v3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}	
+
+
+/********************************************************************************/
+
+body, div, a, li, ul  { margin: 0; padding: 0; border: 0; }
+
+
+
+body { 	 
+	  font-family: "GaletteRegular";
+	font-size:100%; 
+	color:#0c0c0c;
+	
+	
+}
+
+
+.main {width:1000px;height:auto;
+
+background-image: url("../images/back.png");
+background-repeat: repeat;
+
+margin:0 auto;
+margin-top:30px;
+
+
+  -moz-box-shadow:    0px 0px 20px 1px #474747;
+  -webkit-box-shadow: 0px 0px 20px 1px #474747;
+  box-shadow:         0px 0px 20px 1px #202020;
+
+
+
+}
+.content {margin-left:50px;width:900px;}
+.logo {margin-top:30px;}
+.ramecek {margin-top:30px;}
+
+.listt li{list-style-type:square; line-height:25px;margin-left:20px;letter-spacing:5px}
+
+
+.ramecekmaly img {width:175px;height:125px;margin-top:13px;margin-left:12px}
+
+
+.ramecekmaly {
+background-image: url("../images/ramecek.png");
+
+width:200px;
+height:155px;
+float:left;
+margin:10px;
+              }
+              
+
+
+.nabidka {
+  margin-bottom: 14px;
+  margin-top: 14px;
+
+}
+
+.mezera {
+
+  color: gray;
+  margin-top: 25px;
+  background-color: gray;
+}
+
+.nadpisnab {
+  color: darkblue;
+  font-size: 20px;
+  font-weight: bold;
+  font-variant: small-caps;
+  margin-bottom: 16px;
+}
+
+.obrnab {
+  text-align: right;
+  border: 5px white groove;
+  border-color: black;;
+}
+
+.obrazek {
+  float: right;
+}
+.popisnab {     
+  margin-bottom: 14px;
+  margin-top: 14px;
+}
+              
+h1 {margin-bottom:10px;font-size:26px; }
+h2 {margin-bottom:10px;margin-top:20px;font-size:24px}
+h3 {margin-bottom:10px;font-size:26px; text-align: center;    text-shadow: 1px 1px 2px gray;}

@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-class GalerieKontroler extends Kontroler {
+class NasePraceKontroler extends Kontroler {
     
     
     public function zpracuj($parametry) {
