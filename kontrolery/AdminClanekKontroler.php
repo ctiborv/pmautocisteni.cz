@@ -55,6 +55,7 @@ class AdminClanekKontroler extends Kontroler {
 			$this->data['klicova_slova'] = $clanek['klicova_slova'];
 			$this->data['popisek'] = $clanek['popisek'];
 			$this->data['titulek'] = $clanek['titulek'];
+			$this->data['poradi'] = $clanek['poradi'];
 			$this->data['obsah'] = $clanek['obsah'];
 			$this->data['slider'] = $clanek['slider'];
                         }

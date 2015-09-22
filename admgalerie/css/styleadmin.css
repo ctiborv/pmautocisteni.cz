@@ -1,0 +1,230 @@
+body {
+background-color: #000066;
+font-family: verdana, tahoma, sans-serif;
+font-size: 12px;
+
+}
+
+a {
+color: #034dd5;
+}
+
+#layout {
+width: 762px;
+min-height: 600px;
+border: solid 1px #696969;
+background-color: #faeed8;
+margin: 0 auto 0 auto;
+overflow: auto;
+}
+
+#layout img {
+border: 0px;
+margin: 0px;
+
+}
+
+#menu {
+text-align:center;
+font-weight: bold;
+width: 300px;
+padding: 8px 5px 13px 5px;
+border-top-style: solid;
+border-top-width: 1px;
+border-top-color: #696969;
+}
+
+#menu a {
+font-weight: normal; 
+text-decoration: none;
+margin-left: 11px;
+}
+
+#menu span {
+margin-left: 5px;
+}
+
+#menu a:hover {
+text-decoration: underline;
+font-weight: bolder;
+}
+
+#obsah {
+float: left;
+width: 700px !important;
+width: 700px;
+margin: 0 0 5px 10px !important;
+margin: 0 0 5px 10px;
+padding: 20px 15px 20px 0px;
+overflow: auto;
+line-height: 1.4em;
+border-top-style: solid;
+border-top-width: 1px;
+border-top-color: #deb887;
+}
+
+#obsah h2 {
+ text-align: left;
+}
+
+#obsah .tblObedy {
+border-top-style: solid;
+border-top-width: 1px;
+border-top-color: #deb887;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-bottom-color: #deb887;
+
+}
+
+#sidebar {
+float: right;
+width: 219px;
+padding: 20px 15px 20px 15px;
+border-left: 1px solid #deb887;
+font-size: 12px;
+}
+
+#sidebar .uspech {
+	color: green;
+}
+
+h1 {
+color: rgb(102,51,51);
+font-size: 17px;
+}
+
+h2 {
+color: #a0522d;
+font-size: 15px;
+text-align: left;
+}
+
+h3 {
+color: #d2691e;
+font-size: 12px;
+text-decoration: none;
+}
+
+img {
+border: solid 1px #696969;
+margin: 3px;
+}
+
+.vpravo {
+
+  margin: 0 10px 0 40px;
+}
+
+.rgnadpis {
+color: #d2691e;
+font-size: 14px;
+font-weight: bold;
+margin: 10px 0 0 0;
+}
+
+
+
+.poplatek {
+font-size: 15px;
+color: #a0522d;
+}
+
+
+
+img.left {
+float: left;
+margin: 0 5px 0 0;
+}
+
+img.right {
+float: right;
+margin: 0 8px 5px 0;
+}
+
+#sloupec {
+float: right;
+width: 210px !important;
+width: 203px;
+}
+
+#submenu {
+margin: 10px 0px 0px 0px;
+text-align: center;
+font-style: italic;
+color: #a0522d;
+border-left-style: solid;
+border-left-width: 1px;
+border-left-color: #deb887;
+}
+
+.tblPersonalKontakty {
+text-align: left;
+font-size: 11px;
+
+}
+
+.tblVyberovaRizeni {
+text-align: left;
+font-size: 10px;
+}
+
+.bnkRizeni {
+border-bottom: 1px #000000 solid; 
+
+}
+.bnkRizenid {
+border-bottom: 1px #000000 solid; 
+white-space: nowrap;
+}
+
+.pdoba {
+text-align: left;
+margin: 0 10px 0 40px;
+
+}
+
+
+#submenu {
+font-weight: bold; 
+
+}
+
+#submenu a {
+font-weight: normal; 
+text-decoration: none;
+display: block;
+margin: 7px 5px 0px 5px;
+}
+
+#submenu a:hover {
+text-decoration: underline;
+}
+
+#submenu span {
+display: block;
+margin: 7px 5px 0px 5px;
+}
+
+#kontakt {
+background-image: url("../images/webdesign/logopozadi.jpg");
+overflow: hidden;
+font-size:80%;
+font-variant: small-caps;
+font-weight: bold;
+text-align:center;
+line-height: 17px;
+
+}
+
+#kontakt span {
+display: block;
+}
+
+div.delimiter {
+border-top-style: solid;
+border-top-width: 1px;
+border-top-color: #deb887;
+margin: 15px 5px 15px 5px;
+top: 600;
+}

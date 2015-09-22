@@ -43,7 +43,8 @@ class SmerovacKontroler extends Kontroler
                     else $tridaKontroleru = 'ClanekKontroler';
 		// kontroler je 1. parametr URL
                 else {
-                    $tridaKontroleru = $this->pomlckyDoVelbloudiNotace(array_shift($naparsovanaURL)) . 'Kontroler';
+                    $nazevKontroler= $this->pomlckyDoVelbloudiNotace(array_shift($naparsovanaURL));
+                    $tridaKontroleru =  $nazevKontroler.'Kontroler';
                 }
 		if (file_exists('kontrolery/' . $tridaKontroleru . '.php'))
 			$this->kontroler = new $tridaKontroleru;
@@ -71,7 +72,7 @@ class SmerovacKontroler extends Kontroler
 
                 $menuKontroler =  new MenuKontroler();
                 
-                $this->data['menus']= $menuKontroler->zpracujMenu($parametry[0]) ;
+                $this->data['menus']= $menuKontroler->zpracujMenu($parametry) ;
 
                 // Nastavení hlavní šablony
 		$this->pohled = 'rozlozeni';
