@@ -12,9 +12,9 @@ class Menu {
     public function __construct() {
         
 
-            $_menuadmin[]=array('url'=>'/adminclanek','nazev'=>'Články');
+            $_menuadmin[]=array('url'=>'/adminClanek','nazev'=>'Články');
             $_menuadmin[]=array('url'=>'/admgalerie/admin.php','nazev'=>'Galerie');
-            $_menuadmin[]=array('url'=>'/adminnastaveni','nazev'=>'Nastavení');
+            $_menuadmin[]=array('url'=>'/adminNastaveni','nazev'=>'Nastavení');
             $_menuadmin[]=array('url'=>'/logout','nazev'=>'Odhlásit');
             
             $this->_menuadmin=$_menuadmin;
@@ -24,11 +24,9 @@ class Menu {
     }
     
     public function vratMenuKlient(){
-            $clanky= Db::dotazVsechny('
-			SELECT `titulek` , `url` 
-			FROM `clanky` 
-			ORDER BY `poradi` ASC
-		');
+            
+        $spravceClanku = new SpravceClanku();
+        $clanky= $spravceClanku->vratClankyKlient();
             
             foreach ($clanky as $clanek) {
                 $menuklient[]=array('url'=>'clanek/'.$clanek['url'],'nazev'=>$clanek['titulek']);

@@ -38,7 +38,15 @@ class AdminClanekKontroler extends Kontroler {
                     
                         if ($parametry[0]=='vymaz') {
                             $this->_kontrolerMd->vymazClanek($parametry[1]);
-                            $this->presmeruj('adminclanek/');                        
+                            $this->presmeruj('adminClanek/');                        
+                        }
+                        if ($parametry[0]=='posundolu') {
+                            $this->_kontrolerMd->posunClanek($parametry[1],$parametry[2],0);
+                            $this->presmeruj('adminClanek/');                        
+                        }
+                        if ($parametry[0]=='posunnahoru') {
+                            $this->_kontrolerMd->posunClanek($parametry[1],$parametry[2],1);
+                            $this->presmeruj('adminClanek/');                        
                         }
                         if ($_POST['Ulozit']) { 
                             $this->ulozitClanek($parametry);
@@ -49,7 +57,7 @@ class AdminClanekKontroler extends Kontroler {
 			// Pokud nebyl článek s danou URL nalezen, přesměrujeme na ChybaKontroler
                         
 			if (!$clanek)
-				$this->presmeruj('chyba');
+				die($clanek);
 		
 			// Naplnění proměnných pro šablonu		
 			$this->data['klicova_slova'] = $clanek['klicova_slova'];
@@ -57,7 +65,12 @@ class AdminClanekKontroler extends Kontroler {
 			$this->data['titulek'] = $clanek['titulek'];
 			$this->data['poradi'] = $clanek['poradi'];
 			$this->data['obsah'] = $clanek['obsah'];
+			$this->data['skryt'] = $clanek['skryt'];
 			$this->data['slider'] = $clanek['slider'];
+                        }
+                        else {
+                        $poradi=$this->_kontrolerMd->vratMaxPoradi();    
+			$this->data['poradi'] = $poradi['maxporadi'];
                         }
 			// Nastavení šablony
 			$this->pohled = 'adminclanek';
@@ -66,6 +79,7 @@ class AdminClanekKontroler extends Kontroler {
 		// Není zadáno URL článku, vypíšeme všechny
 		{
 			$clanky = $this->_kontrolerMd->vratClanky();
+                        
 			$this->data['clanky'] = $clanky;
 			$this->pohled = 'adminclanky';
 		}
@@ -73,7 +87,8 @@ class AdminClanekKontroler extends Kontroler {
         
         private function ulozitClanek($parametry) {
             
-            if ($_POST['slider']) $_POST['slider']=1;
+            $_POST['slider']=($_POST['slider']=='on');
+            $_POST['skryt']=($_POST['skryt']=='on');
             
             if ($parametry[0]!='novy') {
                 $this->_kontrolerMd->ulozClanek($parametry[0],$_POST);
@@ -81,7 +96,7 @@ class AdminClanekKontroler extends Kontroler {
             else {
                     $_POST['url']=$this->friendly_url($_POST['titulek']);
                     $this->_kontrolerMd->vlozClanek($_POST);
-                    $this->presmeruj('adminclanek/');
+                    $this->presmeruj('adminClanek/');
             }
             
         }

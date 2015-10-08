@@ -1,3 +1,4 @@
+<div class="12u">
 <section>
     <header>
         <h2>Seznam článků</h2>
@@ -5,17 +6,31 @@
     
     
    <table class="default">
-       
-<?php foreach ($clanky as $clanek) : ?>
-       <tr><td><a href="adminclanek/<?= $clanek['url'] ?>"><?= $clanek['titulek'] ?></td><td><a href="adminclanek/vymaz/<?= $clanek['clanky_id'] ?>" title="Vymazat">X</a></tr>
-<?php endforeach ?>
+       <tr>
+       <th>Název</th>   
+       <th>Pořadí</th>   
+       <th>Smazat</th>   
+       </tr>
+<?php 
+
+    $index=0;
+    $last = count($clanky)-1;
+    foreach ($clanky as $clanek) :  
+        if (!$index) $sipkanahoru='';
+        else $sipkanahoru='<a href="adminClanek/posunnahoru/'.$clanek['clanky_id'].'/'.$clanek['poradi'].'">▲</a>';
+        if ($index==$last) $sipkadolu='';
+        else $sipkadolu='<a href="adminClanek/posundolu/'.$clanek['clanky_id'].'/'.$clanek['poradi'].'">▼</a>';
+    ?>
+       <tr><td><a href="adminClanek/<?= $clanek['url'] ?>"><?= $clanek['titulek'] ?></td><td><?= $sipkanahoru.'</br>'.$sipkadolu ?></td><td><a  onclick="return confirm('Opravdu smazat foto?')"  href="adminClanek/vymaz/<?= $clanek['clanky_id'] ?>" title="Vymazat">X</a></tr>
+<?php 
+    $index++;
+    endforeach ?>
    </table>
-    <footer>
         <p>
-        <h3><a href="adminclanek/novy">Přidat nový článek</h3>
+        <h3><a href="adminClanek/novy">Přidat nový článek</h3>
         </p>
-    </footer>
 
 </section>
+ </div>
  
     

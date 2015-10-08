@@ -13,8 +13,10 @@
                 <?= $googlest ?>
         	<script src="assets/js/jquery.min.js"></script>
 		<link rel="stylesheet" href="assets/css/main.css" />
+                <link rel="stylesheet" href="assets/css/font-awesome.min.css">
                 <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.css?v=2.1.5" media="screen" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+                <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+                <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
                         <?php if ($_SESSION['admin']==1) { ?>
                         <script type="text/javascript" src="assets/js/tinymce/tinymce.min.js"></script>
                         <script type="text/javascript" src="assets/js/tinymce/tinymcestart.js">
@@ -33,7 +35,7 @@
 						<div class="12u">
 
 							<header id="header">
-								<a href="clanek/uvod" ><img class="logo" src="img/logo.png"</a>
+                                                            <div class="logo"> <a id="logo" href="clanek/uvod" alt="PM autočištění"><img src="img/logo.png" title="PM Autočištění"/></a></div>
 								<nav id="nav">
                                                                     <?php foreach ($menus as $menu) {?>
                                                                     <a href="<?= $menu['url'] ?>" <?php if ($menu['aktivni']) echo "class=\"current-page-item\"";  ?> ><?= $menu["nazev"] ?></a>

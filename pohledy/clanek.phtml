@@ -4,30 +4,73 @@
 <?php 
 if ($slidery) {
     $sliderhtml='
+        
+    <style> 
+        .captionOrange, .captionBlack
+        {
+            color: #fff;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 4px;
+        }
+        .captionOrange
+        {
+            background: #EB5100;
+            background-color: rgba(235, 81, 0, 0.6);
+        }
+        .captionBlack
+        {
+        	font-size:16px;
+            background: #000;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        a.captionOrange, A.captionOrange:active, A.captionOrange:visited
+        {
+        	color: #ffffff;
+        	text-decoration: none;
+        }
+        a.captionOrange:hover
+        {
+            color: #eb5100;
+            text-decoration: underline;
+            background-color: #eeeeee;
+            background-color: rgba(238, 238, 238, 0.7);
+        }
+        .bricon
+        {
+            background: url(../img/browser-icons.png);
+        }
+    </style>
+    
                                 <script type="text/javascript" src="assets/js/jssor.js"></script>
                         <script type="text/javascript" src="assets/js/jssor.slider.js"></script>
                         <script type="text/javascript" src="assets/js/sliderstart.js"></script>
 
-<div id="slider1_container">
+   <div id="slider2_container" style="position: relative; top: 0px; left: 0px; width: 588px;
+        height: 254px;border-radius: 5px;
+                                box-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);">
 
         <!-- Loading Screen -->
         <div u="loading" style="position: absolute; top: 0px; left: 0px;">
             <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
                 background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
             </div>
-            <div style="position: absolute; display: block; background: url(img/loading.gif) no-repeat center center;
+            <div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;
                 top: 0px; left: 0px;width: 100%;height:100%;">
             </div>
         </div>
-        
+
         <!-- Slides Container -->
-        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 600px; height: 300px;
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 588px; height: 254px;
             overflow: hidden;">
     ';
     foreach ($slidery as $slider) {
      $sliderhtml.=' 
                          <div>
-                        <img width="600px" height="300px" src="img/'.$slider['foto'].'"/>
+                        <img alt="'.$slider['popisky'].'" src="img/'.$slider['foto'].'"/>
                   <div u=caption t="*" class="captionBlack"  style="position:absolute; left:20px; top: 30px; width:300px; height:30px;"> 
                 '.$slider['popisky'].'
                 </div>
@@ -72,10 +115,10 @@ if ($slidery) {
             .jssora05r.jssora05rdn { background-position: -310px -40px; }
         </style>
         <!-- Arrow Left -->
-        <span u="arrowleft" class="jssora05l" style="top: 123px; left: 8px;">
+        <span  u="arrowleft" class="jssora05l" style="top:123px; left: 8px;">
         </span>
         <!-- Arrow Right -->
-        <span u="arrowright" class="jssora05r" style="top: 123px; right: 8px;">
+        <span  u="arrowright" class="jssora05r" style="top:123px; right: 8px;">
         </span>
     </div>
 

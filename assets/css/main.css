@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Ubuntu+Condensed");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 /*
 	Minimaxing by HTML5 UP
 	html5up.net | @n33co
@@ -24,9 +24,6 @@
 		line-height: 1;
 	}
 
-	ol, ul {
-		list-style: none;
-	}
 
 	blockquote, q {
 		quotes: none;
@@ -39,7 +36,7 @@
 
 	table {
 		border-collapse: collapse;
-		border-spacing: 1;
+		border-spacing: 0;
 	}
 
 	body {
@@ -55,23 +52,6 @@
 	}
 
 
-/*slider */
-
-#slider1_container
-{
-    			border-radius: 5px;
-//				border: solid 1px lightgreen;
-//				box-shadow: 0px 0px 0px 1px #12a0bf, 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
-                                box-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
-             position: relative;
-             top: 0px;
-             left: 0px;
-             width: 600px;
-             height: 300px;
-             overflow: hidden;                                
-}
 
 
 /*galerie*/
@@ -93,7 +73,7 @@
 .galobr {
   margin: 5px; 
   display: block;
-  width 60px;
+  width: 60px;
 }
 
 
@@ -111,9 +91,6 @@
 
 
 
-.logo { 
-    height: 80px;
-}
 
 .popisek {
   position:absolute;
@@ -124,16 +101,6 @@
   line-height:40px;
 }
 
-.slides {
-    cursor: move;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 600px;
-    height: 265px;
-    overflow: hidden;
-    cursor: move;
-}
       
         
         
@@ -348,22 +315,23 @@
 		}
 
 			table.default tbody tr {
-				border: solid 1px #e6e6e6;
+				border-bottom: solid 1px #e6e6e6;
 			}
 
 				table.default tbody tr:nth-child(2n+2) {
-					background: #f8f8f8;
+					background: #e8e8e8;
 				}
 
 			table.default td {
-				padding: 0.5em 1em 0.5em 1em;
+				padding: 0.5em 0.8em 0.5em 0.2em;
+                                line-height: 1.3em;
 			}
 
 			table.default th {
 				text-align: left;
-				padding: 0.5em 1em 1em 1em;
-                                background-color: #4EA547;
-                                color: white;
+				padding: 0.5em 1em 1em 0.2em;
+                                color: black;
+                                font-weight: bold;
                                 
 			}
 
@@ -388,6 +356,7 @@
 
 		ul.default li {
 			padding-left: 0.5em;
+                        padding-bottom: 0.2em;
 		}
 
 	ul.icons {
@@ -459,7 +428,14 @@
 			padding-left: 0.25em;
 		}
                 
-        
+
+                
+                li {
+                    
+                    margin-bottom: 0.3em;
+                    
+                }
+
 /* Button */
 
 	input[type="button"],
@@ -581,7 +557,7 @@
 
 	}
 
-	@media screen and (min-width: 737px) and (max-width: 1200px) {
+	@media screen and (min-width: 1001px) and (max-width: 1200px) {
 
 		.container.\31 25\25 {
 			width: 100%;
@@ -606,7 +582,33 @@
 		}
 
 	}
+	@media screen and (min-width: 737px) and (max-width: 1000px) {
 
+		.container.\31 25\25 {
+			width: 100%;
+			max-width: 1000px;
+			min-width: 738px;
+		}
+
+		.container.\37 5\25 {
+			width: 650px;
+		}
+
+		.container.\35 0\25 {
+			width: 400px;
+		}
+
+		.container.\32 5\25 {
+			width: 150px;
+		}
+
+		.container {
+			width: 738px;
+		}
+
+	}
+
+        
 	@media screen and (max-width: 736px) {
 
 		.container.\31 25\25 {
@@ -1543,12 +1545,11 @@
 	}
 
 	body {
-		font-size: 13.5pt;
-		font-family: sans-serif;
+		font-size: 13pt;
+		font-family: 'Roboto', sans-serif;
 		background-color: #e3e9dc;
-		font-family: 'Ubuntu Condensed', sans-serif;
-		color: #555555;
-		letter-spacing: -1px;
+		color: #000000;
+
 	}
 
 	h1, h2, h3, h4 {
@@ -1592,6 +1593,9 @@ text-shadow: 0px 1px 1px rgba(0,0,0,0.4),
 
 	strong {
 		color: #474e43;
+                font-weight: bold;
+//                text-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+                
 	}
 
 	img.left {
@@ -1691,20 +1695,20 @@ text-shadow: 0px 1px 1px rgba(0,0,0,0.4),
 
 		/* Basic */
 
-                         #sliderb_container {
-                            width: 600px;
-                            height: 265px;
-                        }
+            #arrow {
+                top:123px;
+                
+            }
 
-                        .slides  {
-                            width: 600px;
-                            height: 265px;
-                        }
                 
 			body {
-				min-width: 1200px;
+				min-width: 738px;
 			}
 
+                        .logo img{ 
+                            height: 80px;
+                        }
+                        
 			section, article {
 				margin: 0 0 60px 0;
 			}
@@ -1745,11 +1749,11 @@ text-shadow: 0px 1px 1px rgba(0,0,0,0.4),
 -webkit-linear-gradient(top, #1E750C, #017004)
 */
 			#header-wrapper {
-				background-image: -moz-linear-gradient(top, #008dab, #007294);
+				background-image: -moz-linear-gradient(top, #4ff029, #4EA547);
 				background-image: -webkit-linear-gradient(top, #4ff029, #4EA547);
-				background-image: -ms-linear-gradient(top, #008dab, #007294);
-				background-image: linear-gradient(top, #008dab, #007294);
-				background-color: #4EA547;
+				background-image: -ms-linear-gradient(top, #4ff029, #4EA547);
+				background-image: linear-gradient(top, #4ff029, #4EA547);
+				background-color: #4ff029;
                                 box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
                                 -webkit-box-shadow: #D6D6D6 0px 6px 20px;
                                 -moz-box-shadow:    #D6D6D6 0px 6px 20px;
@@ -1799,7 +1803,7 @@ text-shadow: 0px 1px 1px rgba(0,0,0,0.4),
 					top: 1px;
 					line-height: 84px;
 					text-transform: lowercase;
-					font-size: 1.3em;
+                                        font-size: 1.3em;
 					letter-spacing: -1px;
 				}
 
@@ -1809,9 +1813,8 @@ text-shadow: 0px 1px 1px rgba(0,0,0,0.4),
 						color: black;
 						padding: 0 25px 0 25px;
 						outline: 0;
-                                                text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
+                                                text-shadow: 1px 2px 3px rgba(0,0,0,0.4);
+    
                                                 
 					}
 
@@ -1960,19 +1963,28 @@ text-shadow: 0px 1px 1px rgba(0,0,0,0.4),
 
 /* Tablet Only */
 
-	@media screen and (min-width: 737px) and (max-width: 1200px) {
-                        #sliderb_container {
-                            width: 960px;
+	@media screen and (min-width: 1001px) and (max-width: 1200px) {
+
+            #slider1_container {
+                            width: 468px;
                             height: 220px;
+                 }
+                        #slides {
+                            width: 468px;
+                            height: 220px;
+                            
                         }
 
-                        .slides  {
-                            width: 960px;
-                            height: 220px;
-                        }
                         
-                .logo { 
+                        
+                .logo img { 
                     height: 70px;
+                    
+                }
+                
+                .logo {
+                    vertical-align: middle;
+                    
                 }
 
                         
@@ -1980,6 +1992,7 @@ text-shadow: 0px 1px 1px rgba(0,0,0,0.4),
 
 			body {
 				min-width: 1000px;
+                                
 			}
 
 		/* Reusable */
@@ -2045,6 +2058,116 @@ text-shadow: 0px 1px 1px rgba(0,0,0,0.4),
 
 	}
 
+
+	@media screen and (min-width: 737px) and (max-width: 1000px) {
+
+            #slider1tmp_container {
+                            max-width: 348px;
+                            max-height: 180px;
+                            min-width: 338px;
+                            min-height: 150px;
+                 }
+                        #slides_tmp {
+                            width: 368px;
+                            height: 180px;
+                            
+                        }
+
+                        
+                        
+                .logo img { 
+                    height: 60px;
+                }
+                
+                .logo {
+                    vertical-align: middle;
+                    padding-top:10px;
+                    
+                }
+                        
+		/* Basic */
+
+			body {
+				max-width: 1000px;
+                                
+			}
+
+                  	section, article {
+				margin: 0 0 20px 0;
+			}
+
+			section:last-child, article:last-child {
+				margin-bottom: 0;
+			}
+
+			section.left-content {
+				padding-right: 10px;
+			}
+
+			section.right-content {
+				padding-left: 10px;
+			}
+
+			section.middle-content {
+				padding: 0 10px 0 10px;
+			}
+
+			ul.small-image-list img {
+				width: 78px;
+			}
+
+			ul.big-image-list img {
+				width: 178px;
+			}
+
+		/* Reusable */
+
+			ul.small-image-list img {
+				width: 50px;
+			}
+
+			ul.big-image-list img {
+				width: 75px;
+			}
+
+		/* Header */
+
+			#header {
+                                min-width:650px;
+                                max-width:850px;
+				height: 76px;
+			}
+
+				#header h1 {
+					font-size: 2em;
+					line-height: 76px;
+				}
+
+				#header nav {
+					line-height: 74px;
+					font-size: 1.1em;
+				}
+
+					#header nav a {
+						padding: 0 20px 0 20px;
+
+
+		/* Footer */
+
+			#footer-wrapper {
+				padding: 5% 0 5% 0;
+			}
+
+		/* Copyright */
+
+			#copyright {
+				padding: 3em 0 0 0;
+				margin: 5% 0 0 0;
+			}
+
+	}
+        
+        }     
 /* Mobile Only */
 
 	#navPanel, #titleBar {
@@ -2055,7 +2178,17 @@ text-shadow: 0px 1px 1px rgba(0,0,0,0.4),
 
 		/* Basic */
 
-                
+                        #slider1tmp_container {
+                            width: 400px;
+                            height: 200px;
+                        }
+
+                        #slides_tmp {
+                            width: 400px;
+                            height: 200px;
+                        }
+
+
                 
 			html, body {
 				overflow-x: hidden;
@@ -2130,16 +2263,7 @@ text-shadow: 0px 1px 1px rgba(0,0,0,0.4),
 
 		/* Banner */
 
-                        #sliderb_container {
-                            width: 600px;
-                            height: 180px;
-                        }
 
-                        .slides  {
-                            width: 600px;
-                            height: 180px;
-                        }
-		
 
                         
                         #banner-wrapper {
@@ -2332,7 +2456,34 @@ text-shadow: 0px 1px 1px rgba(0,0,0,0.4),
 			}
 
 	}
+
         
+    @media screen and (max-width: 450px) {
+
+    /* Basic */
+
+            #slider1tmp_container {
+                width: 290px;
+                height: 145px;
+            }
+
+            #slides_tmp {
+                width: 290px;
+                height: 145px;
+            }
+
+            #arrow {
+                top:50px;
+                
+            }
+            
+            section, article {
+				padding: 10px 5px 10px 5px;
+			}
+            
+            
+    }
+
 
  .captionOrange, .captionBlack
         {

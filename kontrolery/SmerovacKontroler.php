@@ -48,8 +48,12 @@ class SmerovacKontroler extends Kontroler
                 }
 		if (file_exists('kontrolery/' . $tridaKontroleru . '.php'))
 			$this->kontroler = new $tridaKontroleru;
-		else
-			$this->presmeruj('chyba');
+		else {
+			echo $tridaKontroleru;
+                        die();
+//                    $this->presmeruj('chyba');
+                        
+                }
 		
 		// Volání controlleru
                 
